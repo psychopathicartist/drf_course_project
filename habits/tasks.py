@@ -22,7 +22,7 @@ def compose_and_send_message_task():
                 reward_text = f'Награда за выполнение: {habit.reward}'
             elif habit.related_habit:
                 reward_text = f'После выполнения можете {habit.related_habit.action} в {habit.related_habit.place}'
-            message = f'Напоминание: Вам нужно {habit.action.lower()} в {habit.place.lower()}. {reward_text.lower()}'
+            message = f'Напоминание: Вам нужно {habit.action.lower()} в {habit.place.lower()}. {reward_text.title()}'
             send_telegram_message(chat_id, message)
 
             habit.date_to_send = habit.date_to_send + timedelta(days=habit.periodicity)
