@@ -10,7 +10,6 @@ python = "^3.11"
 django = "^5.0.6"
 djangorestframework = "^3.15.1"
 python-dotenv = "^1.0.1"
-psycopg2 = "^2.9.9"
 djangorestframework-simplejwt = "^5.3.1"
 celery = "^5.4.0"
 eventlet = "^0.36.1"
@@ -21,6 +20,7 @@ django-cors-headers = "^4.3.1"
 requests = "^2.32.3"
 flake8 = "^7.0.0"
 coverage = "^7.5.3"
+psycopg2-binary = "^2.9.9"
 
 
 [build-system]
